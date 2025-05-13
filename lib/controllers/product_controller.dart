@@ -5,9 +5,10 @@ import 'package:get/get.dart';
 import 'package:myapp/data/product.dart';
 
 class ProductController extends GetxController {
-  var products = <Product>[].obs; // Observable list of products
-  var mainCategories = <MainCategory>[].obs; // Observable list of products
-  var productRecomendations = <Product>[].obs; // Observable list of products
+  var products = <Product>[].obs;
+  var mainCategories = <MainCategory>[].obs;
+  var productRecomendations = <Product>[].obs;
+  var selectedProducts = <Product>[].obs;
 
   @override
   void onInit() async {
@@ -24,7 +25,11 @@ class ProductController extends GetxController {
         'lib/data/product_breakfast.json',
         'lib/data/product_chickennfish.json',
         'lib/data/product_FriesnSides.json',
-        'lib/data/product_drinks.json',
+        'lib/data/product_nuggets.json',
+        'lib/data/product_SweetsTreats.json',
+        'lib/data/product_HappyMeal.json',
+        'lib/data/product_beverages.json',
+        'lib/data/product_coffee.json',
       ];
 
       List<Product> p = [];
@@ -77,6 +82,19 @@ class ProductController extends GetxController {
     } catch (e) {
       if (kDebugMode) {
         print('Error loading mainCategories: $e');
+      }
+    }
+  }
+
+  Future<void> setSelectedProducts(List<String> productIds) async {
+    // Ensure the products list is not empty
+    if (products.isNotEmpty) {
+      // Take the first 9 products from the products list
+      selectedProducts.value =
+          products.where((product) => productIds.contains(product.id)).toList();
+    } else {
+      if (kDebugMode) {
+        print('Products list is empty. Cannot load recommendations.');
       }
     }
   }

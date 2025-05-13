@@ -2,46 +2,55 @@
   {
     "title": "Breakfast",
     "key": "Breakfast",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/breakfast_300x300:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/breakfast_300x300:category-panel-left-desktop",
+    "product_ids": ["breakfast01", "breakfast02", "breakfast03", "breakfast04"]
   },
   {
     "title": "Burgers",
     "key": "Burgers",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_BurgersPCP_160x160:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_BurgersPCP_160x160:category-panel-left-desktop",
+    "product_ids": ["burger01", "burger02", "burger03", "burger04"]
   },
   {
     "title": "Chicken & Fish Sandwiches",
     "key": "Chicken & Fish Sandwiches",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_ChickenFishPCP_160x160:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_ChickenFishPCP_160x160:category-panel-left-desktop",
+    "product_ids": ["chickennfish01", "chickennfish02", "chickennfish03", "chickennfish04", "chickennfish05", "chickennfish06"]
   },
   {
     "title": "Nuggets",
     "key": "Nuggets",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/202006_5280_10McNuggets_Dunked_160x160:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/202006_5280_10McNuggets_Dunked_160x160:category-panel-left-desktop",
+    "product_ids": ["nuggets01"]
   },
   {
     "title": "Fries & Sides",
     "key": "Fries & Sides",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/Category_202408_FriesandSides_160x160:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/Category_202408_FriesandSides_160x160:category-panel-left-desktop",
+    "product_ids": ["breakfast01", "breakfast02", "breakfast03", "breakfast04"]
   },
   {
     "title": "Happy Meal",
     "key": "Happy Meal",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/nav_happy_meal_160x160:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/nav_happy_meal_160x160:category-panel-left-desktop",
+    "product_ids": ["happymeal01", "happymeal02", "happymeal03"]
   },
   {
     "title": "Sweets & Treats",
     "key": "Sweets & Treats",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/desserts_shakes_300x300:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/desserts_shakes_300x300:category-panel-left-desktop",
+    "product_ids": ["sweettreats01", "sweettreats02", "sweettreats03", "sweettreats04", "sweettreats05"]
   },
   {
     "title": "Café Coffees",
     "key": "Café Coffees",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_ChickenFishPCP_160x160:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_ChickenFishPCP_160x160:category-panel-left-desktop",
+    "product_ids": ["coffee01", "coffee02", "coffee03", "coffee04", "coffee05"]
   },
   {
     "title": "Beverages",
     "key": "Beverages",
-    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/NavImage_Beverages_160x160:category-panel-left-desktop"
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/NavImage_Beverages_160x160:category-panel-left-desktop",
+    "product_ids": ["beverages01", "beverages02", "beverages03", "beverages04", "beverages05", "beverages06"]
   }
 ]

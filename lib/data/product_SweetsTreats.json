@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sweettreats01",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_3832_OREOMcFlurry_1564x1564-1:nutrition-calculator-tile",
+    "title": "McFlurry with OREO® Cookies",
+    "price": 26000
+  },
+  {
+    "id": "sweettreats02",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_3830_MandMMcFlurry_1564x1564-1:nutrition-calculator-tile",
+    "title": "McFlurry with M&M'S Candies",
+    "price": 27000
+  },
+  {
+    "id": "sweettreats03",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202106_0336_LargeVanillaCone_1564x1564-1:nutrition-calculator-tile",
+    "title": "Vanilla Cone",
+    "price": 28000
+  },
+  {
+    "id": "sweettreats04",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_1509_MediumChocolateShake_Glass_A1_1564x1564-1:nutrition-calculator-tile",
+    "title": "Chocolate Shake",
+    "price": 29000
+  },
+  {
+    "id": "sweettreats05",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_1598_MediumVanillaShake_Glass_A1_1564x1564-1:nutrition-calculator-tile",
+    "title": "Vanilla Shake",
+    "price": 30000
+  }
+]

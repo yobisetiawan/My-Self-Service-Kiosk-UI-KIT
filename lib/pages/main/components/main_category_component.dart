@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myapp/controllers/product_controller.dart';
 import 'package:myapp/data/menu.dart';
 import 'package:myapp/pages/main/components/menu_category_item_component.dart';
 import 'package:myapp/controllers/menu_app_controller.dart';
@@ -8,7 +9,9 @@ final List<MenuItem> defaultMenu = [
   MenuItem(
     title: 'Home',
     key: 'home',
-    imageUrl: 'https://s7d1.scene7.com/is/image/mcdonalds/FeaturedFavorites_NavImage:category-panel-left-desktop',
+    imageUrl:
+        'https://s7d1.scene7.com/is/image/mcdonalds/FeaturedFavorites_NavImage:category-panel-left-desktop',
+    productIds: [],
   ),
 ];
 
@@ -18,6 +21,7 @@ class MainCategoryComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final menuController = Get.find<MenuAppController>();
+    final productController = Get.find<ProductController>();
 
     return Container(
       width: 200,
@@ -52,6 +56,8 @@ class MainCategoryComponent extends StatelessWidget {
                 isSelected: menuController.selectedMenuKey.value == item.key,
                 onTap: () {
                   menuController.selectedMenuKey(item.key);
+                  menuController.selectedMenu(item);
+                  productController.setSelectedProducts(item.productIds);
                 },
               );
             });
@@ -68,6 +74,8 @@ class MainCategoryComponent extends StatelessWidget {
                           menuController.selectedMenuKey.value == item.key,
                       onTap: () {
                         menuController.selectedMenuKey(item.key);
+                        menuController.selectedMenu(item);
+                        productController.setSelectedProducts(item.productIds);
                       },
                     );
                   }).toList(),

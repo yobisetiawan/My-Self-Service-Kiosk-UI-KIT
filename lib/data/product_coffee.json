@@ -1,0 +1,32 @@
+[
+  {
+    "id": "coffee01",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_0573_MediumHotTea_Glass_A1_HL_1564x1564-1:nutrition-calculator-tile",
+    "title": "Hot Tea",
+    "price": 26000
+  },
+  {
+    "id": "coffee02",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201906_1697_MediumPremiumHotChocolate_Glass_A1_HL_1564x1564-1:nutrition-calculator-tile",
+    "title": "McCafé Hot Chocolate",
+    "price": 27000
+  },
+  {
+    "id": "coffee03",
+    "image_url": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/November2023/CqZ6XFK8I7niiIXKue7r.webp",
+    "title": "Iced Matcha Latte",
+    "price": 28000
+  },
+  {
+    "id": "coffee04",
+    "image_url": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/November2023/4ZjBuwFptbmhCyJqUIX6.webp",
+    "title": "Affogato",
+    "price": 29000
+  },
+  {
+    "id": "coffee05",
+    "image_url": "https://d2vuyvo9qdtgo9.cloudfront.net/foods/November2023/QEpdcqn5QRnjlhgmeBfc.webp",
+    "title": "Espresso",
+    "price": 30000
+  }
+]
