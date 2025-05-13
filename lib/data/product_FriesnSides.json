@@ -1,0 +1,32 @@
+[
+  {
+    "id": "frisnside01",
+    "image_url": "",
+    "title": "Small World Famous Fries",
+    "price": 26000
+  },
+  {
+    "id": "frisnside02",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202002_2794_AppleSlices_NoBag_1564x1564-1:nutrition-calculator-tile",
+    "title": "Apple Slices",
+    "price": 27000
+  },
+  {
+    "id": "frisnside03",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_Ingredient_Condiment_202504_03248-072__25195_CreamyChiliSauce_1564x1564:nutrition-calculator-tile",
+    "title": "Creamy Chili McCrispy Strip Dip",
+    "price": 28000
+  },
+  {
+    "id": "frisnside04",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_Ingredient_Condiment_202312_00408-144__0900_TangyBBQ_1564x1564-1:nutrition-calculator-tile",
+    "title": "Tangy Barbeque Sauce",
+    "price": 29000
+  },
+  {
+    "id": "frisnside05",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_Ingredient_Condiment_202203_07812-045__9089_SpicyBuffalo_1564x1564-1:nutrition-calculator-tile",
+    "title": "Spicy Buffalo Sauce",
+    "price": 30000
+  }
+]

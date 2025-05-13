@@ -1,0 +1,38 @@
+[
+  {
+    "id": "chickennfish01",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202012_0383_CrispyChickenSandwich_PotatoBun_1564x1564-1:nutrition-calculator-tile",
+    "title": "McCrispy",
+    "price": 26000
+  },
+  {
+    "id": "chickennfish02",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202004_0046_EggMcMuffin_1564x1564-1:nutrition-calculator-tile",
+    "title": "Deluxe McCrispy",
+    "price": 28000
+  },
+  {
+    "id": "chickennfish03",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202012_0116_SpicyCrispyChicken_PotatoBun_1564x1564-1:nutrition-calculator-tile",
+    "title": "Spicy McCrispy™",
+    "price": 29000
+  },
+  {
+    "id": "chickennfish04",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202104_0100_DeluxeSpicyCrispyChickenSandwich_PotatoBun_1564x1564-1:nutrition-calculator-tile",
+    "title": "Spicy Deluxe McCrispy",
+    "price": 30000
+  },
+  {
+    "id": "chickennfish05",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202302_5926-999_Filet-O-Fish_HalfSlice_Alt_1564x1564-1:nutrition-calculator-tile",
+    "title": "Filet-O-Fish",
+    "price": 31000
+  },
+  {
+    "id": "chickennfish06",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202411_4314-999_McChicken_McValue_1564x1564:nutrition-calculator-tile",
+    "title": "McChicken",
+    "price": 32000
+  }
+]

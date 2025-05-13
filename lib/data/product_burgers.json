@@ -1,0 +1,26 @@
+[
+  {
+    "id": "BigMac",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202302_0005-999_BigMac_1564x1564-1:nutrition-calculator-tile",
+    "title": "Big Mac",
+    "price": 26000
+  },
+  {
+    "id": "TripleCheeseburger",
+    "image_url": "https://www.mcdelivery.co.id/id/static/1746774962634/assets/62/products/100326.png?",
+    "title": "Triple Cheeseburger",
+    "price": 28000
+  },
+  {
+    "id": "drinks03",
+    "image_url": "https://www.mcdelivery.co.id/id/static/1746774962634/assets/62/products/100320.png?",
+    "title": "Double Cheeseburger",
+    "price": 29000
+  },
+  {
+    "id": "drinks04",
+    "image_url": "https://www.mcdelivery.co.id/id/static/1746774962634/assets/62/products/100317.png?",
+    "title": "Cheeseburger Deluxe",
+    "price": 30000
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Breakfast",
+    "key": "Breakfast",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/breakfast_300x300:category-panel-left-desktop"
+  },
+  {
+    "title": "Burgers",
+    "key": "Burgers",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_BurgersPCP_160x160:category-panel-left-desktop"
+  },
+  {
+    "title": "Chicken & Fish Sandwiches",
+    "key": "Chicken & Fish Sandwiches",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_ChickenFishPCP_160x160:category-panel-left-desktop"
+  },
+  {
+    "title": "Nuggets",
+    "key": "Nuggets",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/202006_5280_10McNuggets_Dunked_160x160:category-panel-left-desktop"
+  },
+  {
+    "title": "Fries & Sides",
+    "key": "Fries & Sides",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/Category_202408_FriesandSides_160x160:category-panel-left-desktop"
+  },
+  {
+    "title": "Happy Meal",
+    "key": "Happy Meal",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/nav_happy_meal_160x160:category-panel-left-desktop"
+  },
+  {
+    "title": "Sweets & Treats",
+    "key": "Sweets & Treats",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/desserts_shakes_300x300:category-panel-left-desktop"
+  },
+  {
+    "title": "Café Coffees",
+    "key": "Café Coffees",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/LeftRail_ChickenFishPCP_160x160:category-panel-left-desktop"
+  },
+  {
+    "title": "Beverages",
+    "key": "Beverages",
+    "imageUrl": "https://s7d1.scene7.com/is/image/mcdonalds/NavImage_Beverages_160x160:category-panel-left-desktop"
+  }
+]

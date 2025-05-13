@@ -1,0 +1,22 @@
+[
+  {
+    "id": "burger",
+    "image_url": "assets/images/categories/pic2.jpg",
+    "title": "Burger"
+  },
+  {
+    "id": "ayam",
+    "image_url": "assets/images/categories/pic3.jpg",
+    "title": "Ayam & Nugget"
+  },
+  {
+    "id": "kopi",
+    "image_url": "assets/images/categories/pic4.jpg",
+    "title": "kopi"
+  },
+  {
+    "id": "cemilan",
+    "image_url": "assets/images/categories/pic5.jpg",
+    "title": "Cemilan"
+  }
+]

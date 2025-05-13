@@ -1,0 +1,26 @@
+[
+  {
+    "id": "breakfast01",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202405_0085_BaconEggCheeseBiscuit_1564x1564-1:nutrition-calculator-tile",
+    "title": "Bacon, Egg  & Cheese Biscuit",
+    "price": 26000
+  },
+  {
+    "id": "breakfast02",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202004_0046_EggMcMuffin_1564x1564-1:nutrition-calculator-tile",
+    "title": "Egg McMuffin",
+    "price": 28000
+  },
+  {
+    "id": "breakfast03",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202411_0078_SausageMcMuffin_McValue_1564x1564:nutrition-calculator-tile",
+    "title": "Sausage McMuffin",
+    "price": 29000
+  },
+  {
+    "id": "breakfast04",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201907_0083_SausageEggMcMuffin_1564x1564-1:nutrition-calculator-tile",
+    "title": "Sausage McMuffin® with Egg",
+    "price": 30000
+  }
+]

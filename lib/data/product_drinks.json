@@ -1,0 +1,38 @@
+[
+  {
+    "id": "drinks01",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202402_0521_MediumCoke_ContourGlassv1_1564x1564:nutrition-calculator-tile",
+    "title": "Coca-Cola",
+    "price": 29000
+  },
+  {
+    "id": "drinks02",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202212_0721_MediumSprite_Glass_1564x1564-1?wid=782&hei=782&dpr=off",
+    "title": "Sprite",
+    "price": 26000
+  },
+  {
+    "id": "drinks03",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_201905_0421_MediumDrPepper_Glass_1564x1564-1?wid=782&hei=782&dpr=off",
+    "title": "Dr Pepper",
+    "price": 21000
+  },
+  {
+    "id": "drinks04",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202212_1262_MediumFantaOrange_Glass_1564x1564-1?wid=782&hei=782&dpr=off",
+    "title": "Fanta Orange",
+    "price": 22000
+  },
+  {
+    "id": "drinks05",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonalds/DC_202112_0652_MediumDietCoke_Glass_1564x1564-1?wid=782&hei=782&dpr=off",
+    "title": "Diet Coke",
+    "price": 27000
+  },
+  {
+    "id": "drinks06",
+    "image_url": "https://s7d1.scene7.com/is/image/mcdonaldsstage/DC_202301_7963_MediumFrozenCocaColaClassic_Glass_1564x1564?wid=782&hei=782&dpr=off",
+    "title": "Frozen Coca-Cola Classic",
+    "price": 26000
+  }
+]
