@@ -10,12 +10,18 @@ class ProductController extends GetxController {
   var productRecomendations = <Product>[].obs;
   var selectedProducts = <Product>[].obs;
 
+  var productDetails = Rx<Product?>(null);
+
   @override
   void onInit() async {
     super.onInit();
     await loadProducts();
     loadMainCategories();
     loadProductRecomendations();
+  }
+
+  void setProductDetails(Product product) {
+    productDetails.value = product;
   }
 
   Future<void> loadProducts() async {

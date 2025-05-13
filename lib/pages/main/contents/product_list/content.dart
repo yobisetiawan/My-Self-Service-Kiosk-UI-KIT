@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:myapp/controllers/menu_app_controller.dart';
 import 'package:myapp/pages/main/components/product_card_component.dart';
 import 'package:myapp/controllers/product_controller.dart';
+import 'package:myapp/routes.dart';
 
 class ProductListContent extends StatelessWidget {
   const ProductListContent({super.key});
@@ -17,13 +18,10 @@ class ProductListContent extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Obx((){
+          Obx(() {
             return Text(
               menuCtr.selectedMenu.value?.title ?? '',
-              style: const TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+              style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             );
           }),
 
@@ -32,7 +30,11 @@ class ProductListContent extends StatelessWidget {
             child: Obx(() {
               if (productCtr.selectedProducts.isEmpty) {
                 return Center(
-                  child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator(),), // Show loading indicator
+                  child: SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(),
+                  ), // Show loading indicator
                 );
               }
 
@@ -52,6 +54,10 @@ class ProductListContent extends StatelessWidget {
                               imageUrl: product.imageUrl,
                               title: product.title,
                               price: product.price,
+                              onTap: () {
+                                productCtr.setProductDetails(product);
+                                Get.toNamed(AppRoutes.productDetails);
+                              },
                             ),
                           );
                         }).toList(),

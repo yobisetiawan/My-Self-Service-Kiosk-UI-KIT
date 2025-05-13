@@ -19,7 +19,15 @@ class BtnComponent extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: variant == 'primary' ? AppColor.primary : Colors.white,
         fixedSize: Size(200, 50),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(0),
+          side: BorderSide(
+            color: const Color(0xFFDDDDDD), // Light gray border (#DDD)
+            width: 1, // Border width
+          ),
+        ),
+        elevation: 0,
+        
       ),
       onPressed: onPressed,
       child: Text(

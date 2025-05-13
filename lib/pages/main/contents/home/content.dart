@@ -5,6 +5,7 @@ import 'package:myapp/controllers/product_controller.dart';
 import 'package:myapp/pages/main/components/home_category_component.dart';
 import 'package:myapp/pages/main/components/product_card_component.dart';
 import 'package:myapp/pages/main/components/touchable_card_component.dart';
+import 'package:myapp/routes.dart';
 
 class HomeContent extends StatelessWidget {
   const HomeContent({super.key});
@@ -52,7 +53,7 @@ class HomeContent extends StatelessWidget {
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
-             Obx(
+            Obx(
               () => Wrap(
                 spacing: 10,
                 runSpacing: 10,
@@ -64,6 +65,10 @@ class HomeContent extends StatelessWidget {
                           imageUrl: item.imageUrl,
                           title: item.title,
                           price: item.price,
+                          onTap: () {
+                            ctr.setProductDetails(item);
+                            Get.toNamed(AppRoutes.productDetails);
+                          },
                         ),
                       );
                     }).toList(),

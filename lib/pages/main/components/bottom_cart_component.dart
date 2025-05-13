@@ -43,7 +43,10 @@ class BottomCartComponent extends StatelessWidget {
                         ),
                         child: Text(
                           "15",
-                          style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
@@ -65,9 +68,7 @@ class BottomCartComponent extends StatelessWidget {
                     backgroundColor: Colors.white,
                     fixedSize: Size(200, 50), // Set width and height
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(
-                        5,
-                      ), // Optional: Rounded corners
+                      borderRadius: BorderRadius.circular(5),
                     ),
                   ),
                   onPressed: () {
@@ -76,7 +77,10 @@ class BottomCartComponent extends StatelessWidget {
                   },
                   child: Text(
                     "Mulai dari awal",
-                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
                 SizedBox(width: 10),
@@ -96,7 +100,10 @@ class BottomCartComponent extends StatelessWidget {
                   },
                   child: Text(
                     "Lihat Pesanan Saya",
-                    style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ],

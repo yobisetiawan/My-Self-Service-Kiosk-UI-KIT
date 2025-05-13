@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/controllers/cart_controller.dart';
 import 'package:myapp/controllers/menu_app_controller.dart';
 import 'package:myapp/controllers/product_controller.dart';
 import 'lang/translations.dart';
@@ -19,6 +20,7 @@ void main() async {
 
   Get.put(MenuAppController());
   Get.put(ProductController());
+  Get.put(CartController());
   runApp(const MyApp());
 }
 

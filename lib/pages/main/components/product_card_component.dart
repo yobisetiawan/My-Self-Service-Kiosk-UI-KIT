@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/components/image_network_component.dart';
 
@@ -6,12 +5,14 @@ class ProductCardComponent extends StatelessWidget {
   final String imageUrl;
   final String title;
   final double price;
+  final void Function()? onTap;
 
   const ProductCardComponent({
     super.key,
     required this.imageUrl,
     required this.title,
     required this.price,
+    this.onTap,
   });
 
   @override
@@ -83,13 +84,7 @@ class ProductCardComponent extends StatelessWidget {
               borderRadius: BorderRadius.circular(4),
             ),
             clipBehavior: Clip.antiAlias,
-            child: InkWell(
-              onTap: () {
-                if (kDebugMode) {
-                  print("TouchableCardComponent tapped!");
-                }
-              },
-            ),
+            child: InkWell(onTap: onTap),
           ),
         ),
       ],
