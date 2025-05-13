@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:myapp/routes.dart';
 
 class WelcomeCardComponent extends StatelessWidget {
   final String title; // Add a title property
   final String imagePath; // Add an imagePath property
+  final void Function()? onTap;
 
   const WelcomeCardComponent({
     super.key,
     required this.title, // Mark as required
     required this.imagePath, // Mark as required
+    this.onTap,
   });
 
   @override
@@ -53,11 +53,7 @@ class WelcomeCardComponent extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             ),
             clipBehavior: Clip.antiAlias,
-            child: InkWell(
-              onTap: () {
-                Get.toNamed(AppRoutes.main);
-              },
-            ),
+            child: InkWell(onTap: onTap),
           ),
         ),
       ],

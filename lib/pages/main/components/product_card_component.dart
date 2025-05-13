@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/components/image_network_component.dart';
+import 'package:myapp/utils/formatter.dart';
 
 class ProductCardComponent extends StatelessWidget {
   final String imageUrl;
@@ -65,7 +66,7 @@ class ProductCardComponent extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      price.toString(),
+                      formatCurrency(price),
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.grey,

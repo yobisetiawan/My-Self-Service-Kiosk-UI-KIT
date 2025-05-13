@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myapp/components/btn_component.dart';
+import 'package:myapp/controllers/cart_controller.dart';
+import 'package:myapp/utils/formatter.dart';
 
 class BottomCartComponent extends StatelessWidget {
   const BottomCartComponent({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final cartCtr = Get.find<CartController>();
     return Positioned(
       bottom: 0,
       left: 0,
@@ -36,75 +40,53 @@ class BottomCartComponent extends StatelessWidget {
                       right: -15,
                       top: -10,
                       child: Container(
-                        padding: EdgeInsets.all(4),
+                        padding: EdgeInsets.all(6),
                         decoration: BoxDecoration(
                           color: Colors.red,
                           shape: BoxShape.circle,
                         ),
-                        child: Text(
-                          "15",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                        child: Obx(() {
+                          return Text(
+                            '${cartCtr.totalQuantity}',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          );
+                        }),
                       ),
                     ),
                   ],
                 ),
                 SizedBox(width: 40),
-                Text(
-                  "Rp 0",
-                  style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
-                ),
+                Obx(() {
+                  return Text(
+                    'Rp ${formatCurrency(cartCtr.totalPrice)}',
+                    style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+                  );
+                }),
               ],
             ),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    fixedSize: Size(200, 50), // Set width and height
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                  ),
+                BtnComponent(
+                  text: "Mulai dari awal",
+                  variant: 'secondary',
                   onPressed: () {
                     // Add your button action here
                     Get.back();
                   },
-                  child: Text(
-                    "Mulai dari awal",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
                 ),
+
                 SizedBox(width: 10),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.yellow,
-                    fixedSize: Size(200, 50), // Set width and height
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(
-                        5,
-                      ), // Optional: Rounded corners
-                    ),
-                  ),
+                BtnComponent(
+                  text: "Lihat Pesanan Saya",
                   onPressed: () {
                     // Add your button action here
                     Get.back();
                   },
-                  child: Text(
-                    "Lihat Pesanan Saya",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
                 ),
               ],
             ),

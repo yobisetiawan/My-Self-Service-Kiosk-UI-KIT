@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/components/btn_component.dart';
 import 'package:myapp/components/initial_load_component.dart';
+import 'package:myapp/controllers/cart_controller.dart';
+import 'package:myapp/routes.dart';
 import 'components/welcome_card_component.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -9,6 +11,8 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cartCtr = Get.find<CartController>();
+
     return InitialLoadComponent(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -38,6 +42,10 @@ class WelcomePage extends StatelessWidget {
                         child: WelcomeCardComponent(
                           imagePath: 'assets/images/icons/eat_here.jpeg',
                           title: 'home.eatHere'.tr,
+                          onTap: () {
+                            cartCtr.typeOrder.value = 'eat_here';
+                            Get.toNamed(AppRoutes.main);
+                          },
                         ),
                       ),
                       SizedBox(width: 20),
@@ -45,6 +53,10 @@ class WelcomePage extends StatelessWidget {
                         child: WelcomeCardComponent(
                           imagePath: 'assets/images/icons/take_away.jpeg',
                           title: 'home.takeAway'.tr,
+                          onTap: () {
+                            cartCtr.typeOrder.value = 'take_away';
+                            Get.toNamed(AppRoutes.main);
+                          },
                         ),
                       ),
                     ],
