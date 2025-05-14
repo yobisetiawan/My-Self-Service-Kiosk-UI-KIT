@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/components/btn_component.dart';
 import 'package:myapp/controllers/cart_controller.dart';
+import 'package:myapp/routes.dart';
 import 'package:myapp/utils/formatter.dart';
 
 class BottomCartComponent extends StatelessWidget {
@@ -76,6 +77,7 @@ class BottomCartComponent extends StatelessWidget {
                   variant: 'secondary',
                   onPressed: () {
                     // Add your button action here
+                    cartCtr.cleanCart();
                     Get.back();
                   },
                 ),
@@ -84,8 +86,7 @@ class BottomCartComponent extends StatelessWidget {
                 BtnComponent(
                   text: "Lihat Pesanan Saya",
                   onPressed: () {
-                    // Add your button action here
-                    Get.back();
+                     Get.toNamed(AppRoutes.order);
                   },
                 ),
               ],

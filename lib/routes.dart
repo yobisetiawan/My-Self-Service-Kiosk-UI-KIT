@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:myapp/pages/initial/page.dart';
+import 'package:myapp/pages/order/page.dart';
 import 'package:myapp/pages/product_details/page.dart';
 import 'pages/welcome/page.dart';
 import 'pages/main/page.dart';
@@ -9,6 +10,7 @@ class AppRoutes {
   static const welcome = '/welcome';
   static const main = '/main';
   static const productDetails = '/productDetails';
+  static const order = '/order';
 }
 
 class AppPages {
@@ -20,5 +22,6 @@ class AppPages {
       name: AppRoutes.productDetails,
       page: () => const ProductDetailsPage(),
     ),
+    GetPage(name: AppRoutes.order, page: () => const OrderPage()),
   ];
 }

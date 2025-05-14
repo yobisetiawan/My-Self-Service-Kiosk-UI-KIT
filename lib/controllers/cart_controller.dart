@@ -25,4 +25,33 @@ class CartController extends GetxController {
       carts.add(Cart(product: product, quantity: qty));
     }
   }
+
+  void removeCartProduct(Cart c) {
+    // Remove the product from the cart
+    carts.removeWhere((cart) => cart.product.id == c.product.id);
+
+    // Notify observers about the change
+    carts.refresh();
+  }
+
+  void cleanCart() {
+    carts.value = [];
+  }
+
+  void incrementQuantity(Cart cart) {
+    cart.quantity++;
+    carts.refresh(); // Notify observers about the change
+  }
+
+  void decrementQuantity(Cart cart) {
+    if (cart.quantity > 1) {
+      cart.quantity--;
+      carts.refresh(); // Notify observers about the change
+    } 
+    // else {
+    //   removeCartProduct(cart); // Remove the product if quantity is 0
+    // }
+  }
+
+  //i want update the qty ++
 }

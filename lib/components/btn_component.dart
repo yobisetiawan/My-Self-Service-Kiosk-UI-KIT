@@ -5,12 +5,14 @@ class BtnComponent extends StatelessWidget {
   final void Function()? onPressed;
   final String text;
   final String? variant;
+  final Size? size;
 
   const BtnComponent({
     super.key,
     required this.text,
     this.onPressed,
     this.variant = 'primary',
+    this.size = const Size(200, 50),
   });
 
   @override
@@ -18,7 +20,7 @@ class BtnComponent extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: variant == 'primary' ? AppColor.primary : Colors.white,
-        fixedSize: Size(200, 50),
+        fixedSize: size,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(0),
           side: BorderSide(
@@ -27,7 +29,6 @@ class BtnComponent extends StatelessWidget {
           ),
         ),
         elevation: 0,
-        
       ),
       onPressed: onPressed,
       child: Text(
